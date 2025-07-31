@@ -26,7 +26,7 @@ class Passenger {
     private String address;
     private String mobileNo;
     private String emailId;
-    private String aadhaarNo;  // Changed to String for accuracy
+    private String aadhaarNo;  
 
     public void setName(String name) { this.name = name; }
     public void setAge(int age) { this.age = age; }
@@ -60,10 +60,9 @@ public class NexaRide {
             String userId = sc.next();
             System.out.print("PASSWORD : ");
             String password = sc.next();
-            // For simplicity, login always succeeds here
             System.out.println("Login successful");
         } else {
-            sc.nextLine(); // consume leftover newline
+            sc.nextLine(); 
             System.out.println("Sign up and create your account");
             System.out.print("Name : ");
             String name = sc.nextLine();
@@ -101,7 +100,7 @@ public class NexaRide {
         System.out.println("3. Tourism Packages");
         System.out.println("Bus Types: AC / Non-AC / AC-Sleeper");
 
-        sc.nextLine(); // consume leftover newline
+        sc.nextLine();
 
         String busType;
         while (true) {
@@ -310,6 +309,5 @@ public class NexaRide {
         }
 
         System.out.println("Thank you for booking with Nexa Ride!");
-        sc.close();
     }
 }
